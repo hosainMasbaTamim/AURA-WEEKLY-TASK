@@ -1,5 +1,7 @@
 # week 1 
-basic python syntax, variable, data type, conditions, loops
+basic python syntax, variable, data type, conditions, loops.
+
+also some advanced topics like nested loop, ternary operator, switch case, break/pass/continue
 
 ## script
 a simple cgpa calculatior, runs completely on the terminal
