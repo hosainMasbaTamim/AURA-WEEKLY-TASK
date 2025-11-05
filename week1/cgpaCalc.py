@@ -24,10 +24,13 @@ for i in range(n):
     numerator+= x*y
     denominator+=x
 
-# calculate term gpa
-new_gp = numerator/denominator
-new_credit = denominator
-#calculate overall cgps
-new_cg = ((prev_cg*prev_credit)+(new_gp)*new_credit)/(prev_credit+new_credit)
+if denominator==0:
+    print("invalid")
+else:
+    # calculate term gpa
+    new_gp = numerator/denominator
+    new_credit = denominator
+    #calculate overall cgps
+    new_cg = ((prev_cg*prev_credit)+(new_gp)*new_credit)/(prev_credit+new_credit)
 
-print("your current cgpa is", new_cg)
+    print("your current cgpa is", new_cg)
