@@ -1,22 +1,29 @@
-# take inputs for the students
-
 def take_input():
+    while True:
+        try:
+            full_name = input("enter full name: ").strip()
+            if not full_name.replace(" ", "").isalpha():
+                raise ValueError("full name must contain only letters")
 
-    try:
-        full_name = input("enter full name ").strip()
-        admission_year = int(input("enter year ").strip())
-        admission_session = input("enter session ").strip()
-        dept = input("enter department ")
+            admission_year_input = input("enter year: ").strip()
+            if not admission_year_input.isdigit():
+                raise ValueError("year must be a number")
+            admission_year = int(admission_year_input)
 
-        last_name = full_name.split()[-1]               # extarcting last name
-        first_alpha = full_name[0]                      # extracting last alphabet
+            admission_session = input("enter session: ").strip()
+            if not admission_session.isalpha():
+                raise ValueError("session must be letters only")
 
-    except ValueError:
-        print("invalid input")
-        return None
-    except TypeError:
-        print("invalid input type")
-        return None
-    else:
-        print("succesfully taken")
-        return last_name,first_alpha,admission_year,admission_session,dept
+            dept = input("enter department: ").strip()
+            if not dept.isalpha():
+                raise ValueError("department must be letters only")
+
+            last_name = full_name.split()[-1]
+            first_alpha = full_name[0]
+
+        except ValueError as e:
+            print("invalid input:", e)
+            continue
+        else:
+            print("succesfully taken")
+            return last_name, first_alpha, admission_year, admission_session, dept

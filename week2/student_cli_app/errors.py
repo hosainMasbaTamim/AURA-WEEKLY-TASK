@@ -1,13 +1,13 @@
-# all ther errors for the cli app
+# errors.py
 
 class BaseError(Exception):
-    # a base exception 
     pass
 
-class DuplicateError(Exception):
-    # when credential already exists
+class DuplicateError(BaseError):
     pass
 
-class NotValidSession(Exception):
-    # when session invalid
+class NotValidSession(BaseError):
+    pass
+
+class NotValidDepartment(BaseError):
     pass
