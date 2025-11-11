@@ -7,3 +7,7 @@ class BaseError(Exception):
 class DuplicateError(Exception):
     # when credential already exists
     pass
+
+class NotValidSession(Exception):
+    # when session invalid
+    pass
