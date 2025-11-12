@@ -1,3 +1,4 @@
+# this is the start point of the code
 import gen
 import input as ip
 import errors as er
