@@ -3,9 +3,6 @@
 class BaseError(Exception):
     pass
 
-class DuplicateError(BaseError):
-    pass
-
 class NotValidSession(BaseError):
     pass
 
