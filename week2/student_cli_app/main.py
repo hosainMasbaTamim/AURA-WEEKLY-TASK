@@ -14,5 +14,5 @@ try:
 except er.BaseError as e:
     print("error",e)
 
-print(s_id,s_mail)
+print(f"ID: {s_id}, mail: {s_mail}")
 

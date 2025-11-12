@@ -1,3 +1,4 @@
+# this file holdes all the functions 
 import input as ip
 import errors as er
 

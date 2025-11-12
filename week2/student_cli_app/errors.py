@@ -1,4 +1,4 @@
-# errors.py
+# this file holdes user defined errors
 
 class BaseError(Exception):
     pass

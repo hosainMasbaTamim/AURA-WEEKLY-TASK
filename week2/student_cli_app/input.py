@@ -1,3 +1,4 @@
+# this file is for input taking
 def take_input():
     while True:
         try:
