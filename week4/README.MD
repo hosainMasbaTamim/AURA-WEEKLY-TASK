@@ -6,3 +6,4 @@ a simple todo list cli app. xampp is being used as local host. run this command 
 make sure xampp is hosting the todo.sql database.
 
 ## sales app cli
+a simple sales cli app that stores the sales of a shop. this app has the same configaration as the todo list app. this app also has a analysis part where it tell best selling products and total sales of the shop
